@@ -17,7 +17,7 @@ namespace SourceGeneratorImpl
                 rootNamespace = "NotFound";
             }
 
-            var masterSource = $"public static class GeneratedClass {{ public static string {rootNamespace} = \"Hello\" }}";
+            var masterSource = $"public static class GeneratedClass {{ public static string {rootNamespace} = \"Hello\"; }}";
             context.AddSource("Generated.cs", masterSource);
         }
     }
